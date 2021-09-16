@@ -1,14 +1,16 @@
 require("dotenv").config({ path: "./config.env" });
+const fetch = require("node-fetch");
 
 exports.searchVideos = async (req, res) => {
-  const searchTerm = req.params.searchtext;
-  const url = `https://youtube.googleapis.com/youtube/v3/search?q=${searchTerm}&part=snippet&key=${process.env.YOUTUBE_API_KEY}`;
-  console.log(url);
+  const searchtext = req.params.searchtext;
+  const url = `https://youtube.googleapis.com/youtube/v3/search?q=${searchtext}&part=snippet&key=${process.env.YOUTUBE_API_KEY}`;
 
   try {
-    const res = await fetch(url);
-    console.log(res);
+    const videosInfo = await fetch(url);
+    const videosJson = await videosInfo.json();
+    console.log(videosInfo);
+    res.json(videosJson);
   } catch (err) {
-    res.json(err);
+    console.log("err: ", err.stack);
   }
 };
