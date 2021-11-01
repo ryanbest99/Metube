@@ -7,10 +7,9 @@ const VideoDetail = ({ selectedVideo }) => {
   const description = selectedVideo.snippet.description;
 
   return (
-    <div>
+    <div className="video-detail">
       <iframe
-        width="560"
-        height="315"
+        width="100%"
         src={`https://www.youtube.com/embed/${selectedVideo.id.videoId}`}
         title="YouTube video player"
         frameBorder="0"
@@ -18,7 +17,7 @@ const VideoDetail = ({ selectedVideo }) => {
         allowFullScreen
       ></iframe>
       <h3>{title}</h3>
-      <h3>{description}</h3>
+      <h5>{description}</h5>
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import "./index.css";
 import React from "react";
 import axios from "axios";
 import SearchInput from "./components/SearchInput";
@@ -31,7 +32,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div style={{ border: "1px solid red" }}>
+      <div>
         <SearchInput onSubmit={this.onSearchInput} />
         {this.state.selectedVideo && (
           <VideoDetail selectedVideo={this.state.selectedVideo} />

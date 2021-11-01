@@ -7,7 +7,7 @@ const Video = ({ video, onSelectedVideo }) => {
   //   const title = video.snippet.title;
   //   const description = video.snippet.description
 
-  const { thumbnails, title, description } = video.snippet;
+  const { thumbnails, title, description, channelTitle } = video.snippet;
 
   return (
     <div
@@ -17,9 +17,10 @@ const Video = ({ video, onSelectedVideo }) => {
       }}
     >
       <img src={thumbnails.medium.url} alt={title} />
-      <div>
-        <h3>{title}</h3>
-        <h4>{description}</h4>
+      <div className="video-text">
+        <h4>{title}</h4>
+        <h5>{channelTitle}</h5>
+        {/* <h4>{description}</h4> */}
       </div>
     </div>
   );

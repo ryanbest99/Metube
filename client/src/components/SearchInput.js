@@ -12,18 +12,20 @@ export default class SearchInput extends React.Component {
   render() {
     return (
       <Fragment>
-        <form onSubmit={this.onInputSubmit}>
-          <div className="ui icon input">
+        <div className="search-div">
+          <a href="https://metube-demo.herokuapp.com/">
+            <h2>MeTube</h2>
+          </a>
+          <form onSubmit={this.onInputSubmit}>
             <input
               type="text"
               placeholder="Search..."
               value={this.state.term}
               onChange={(e) => this.setState({ term: e.target.value })}
             />
-            <i className="search icon"></i>
-          </div>
-        </form>
-        <h1>{this.state.term}</h1>
+            <button onClick={this.onInputSubmit}>Search</button>
+          </form>
+        </div>
       </Fragment>
     );
   }
