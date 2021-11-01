@@ -2,6 +2,7 @@ require("dotenv").config({ path: "./config.env" });
 const express = require("express");
 const cors = require("cors");
 const app = express();
+const path = require("path");
 const youtubeRouter = require("./routers/youtube");
 
 app.use(express.json());
