@@ -7,7 +7,7 @@
   <img alt="GitHub License" src="https://img.shields.io/github/license/ryanbest99/user-auth-boilerplate">
   
   <a href="https://user-auth-1.herokuapp.com/#/" target="_blank">
-  <img alt="Website" src="https://img.shields.io/website?up_color=red&up_message=MeTube&url=https%3A%2F%2Fme-tube-1.herokuapp.com%2F">
+  <img alt="Website" src="https://img.shields.io/website?up_color=red&up_message=MeTube&url=https%3A%2F%2Fmetube-1.herokuapp.com%2F">
   </a>
 
   <img alt="repo-size" src="https://img.shields.io/github/repo-size/ryanbest99/user-auth-boilerplate">
