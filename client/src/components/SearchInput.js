@@ -13,7 +13,7 @@ export default class SearchInput extends React.Component {
     return (
       <Fragment>
         <div className="search-div">
-          <a href="https://metube-demo.herokuapp.com/">
+          <a href="https://me-tube-1.herokuapp.com/">
             <h2>MeTube</h2>
           </a>
           <form onSubmit={this.onInputSubmit}>
