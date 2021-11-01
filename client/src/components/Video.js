@@ -11,14 +11,9 @@ const Video = ({ video, onSelectedVideo }) => {
 
   return (
     <div
+      className="video-container"
       onClick={() => {
         onSelectedVideo(video);
-      }}
-      style={{
-        display: "flex",
-        border: "1px solid red",
-        marginBottom: "1rem",
-        cursor: "pointer",
       }}
     >
       <img src={thumbnails.medium.url} alt={title} />

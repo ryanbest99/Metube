@@ -31,7 +31,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{ border: "1px solid red" }}>
         <SearchInput onSubmit={this.onSearchInput} />
         {this.state.selectedVideo && (
           <VideoDetail selectedVideo={this.state.selectedVideo} />
